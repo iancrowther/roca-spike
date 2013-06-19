@@ -3,10 +3,18 @@
  * GET users listing.
  */
 
+var data = [{
+	'name': 'Bill',
+	'occupation': 'Time'
+},{
+	'name': 'Ted',
+	'occupation': 'Traveller'
+}];
+
 exports.list = function(req, res){
   
   if ( req.accepts('text/html') ) {
-  	
+  	console.log('data: ' + data);
   	res.render('user', { 
   		title: 'roca-expressjs',
   		header: 'ROCA Express',
