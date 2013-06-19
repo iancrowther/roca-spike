@@ -7,4 +7,4 @@ This web application has been created as an experiment to ivestigate a ROCA arch
 - [HBS (Handlebars)](https://github.com/barc/express-hbs)
 - [Bootstrap 3](https://github.com/twitter/bootstrap/tree/3.0.0-wip)
 
-Please feel free to ask any questions via twitter @iancrowther
+Please feel free to ask any questions via twitter [@iancrowther](http://twitter.com/iancrowther)
