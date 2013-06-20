@@ -5,4 +5,35 @@
 </script>
 {{/content}}
 
-<p>Main Content Goes Here!</p>
+<section id="content">
+	
+	<h2>Resource</h2>
+	<ul>
+		<li>
+			<code>"/index.hbs"</code>
+		</li>
+	</ul>
+
+	<h3>Test this resource using the following cURL commands:</h3>
+
+	<sup>* You will need to have <a href="http://curl.haxx.se/">cURL</a> installed on your machine</sup>
+	
+	<ul>
+		<li>
+			<p>All - The following command returns all the markup rendered in the browser.  This includes any scripts, css, web components and inherited layouts.</p>
+			<code>{{model.resource.all}}</code>
+			<p><em>Accept Header: 'Accept: */*'</em></p>
+		</li>
+		<li>
+			<p>Resource -The following command returns the markup for the resource only.  This includes any scripts, css, web components that are defined within the resource.</p>
+			<code>{{model.resource.resource}}</code>
+			<p><em>Accept Header: 'Accept: text/x-handlebars-template'</em></p>
+		</li>
+		<li>
+			<p>JSON - The following command returns the json for the resource only.</p>	
+			<code>{{model.resource.json}}</code>
+			<p><em>Accept Header: 'Accept: application/json'</em></p>
+		</li>
+	</ul>
+
+</section>

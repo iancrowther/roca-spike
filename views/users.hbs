@@ -3,13 +3,13 @@
 	<h2>Resource</h2>
 	<ul>
 		<li>
-			<code>"/user.hbs"</code>
+			<code>"/users.hbs"</code>
 		</li>
 	</ul>
 
-	<h3>User {{model.resource.user.id}}</h3>
+	<h3>Users List</h3>
 	<ul>
-    {{#model.resource.user}}<li>{{> user}}</li>{{/model.resource.user}}
+    {{#each model.resource.users}}<li>{{> user}}</li>{{/each}}
 	</ul>
 
 	<h3>Test this resource using the following cURL commands:</h3>

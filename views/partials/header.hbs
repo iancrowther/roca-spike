@@ -1,2 +1,39 @@
-<h1>{{header}}</h1>
-<p>Welcome to {{title}}</p>
+<header>
+	
+	<h1>{{model.header.heading}}</h1>
+
+	<nav>
+	
+		<ul>
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/users">Users</a>
+			</li>
+		<!-- 	<li>
+				<a href="/partials/header">header</a>
+			</li>
+			<li>
+				<a href="/partials/footer">Footer</a>
+			</li> -->
+		</ul>
+
+	</nav>
+
+	<h2>Welcome to {{model.header.title}}, a <a href="http://roca-style.org">ROCA</a> web app prototype.</h2>
+
+	<p>This page has been constructed using a layout template, a header partial and a footer partial which house a content block for the main resource.</p>
+	<ul>
+		<li>
+			<code>"/layouts/default.hbs"</code>
+		</li>
+		<li>
+			<code>"/partials/header.hbs"</code>
+		</li>
+		<li>
+			<code>"/partials/footer.hbs"</code>
+		</li>
+	</ul>
+	
+</header>

@@ -6,7 +6,7 @@
 var express = require('express')
 	, hbs = require('express-hbs') 
   , routes = require('./routes')
-  , user = require('./routes/user')
+  , users = require('./routes/users')
   , http = require('http')
   , path = require('path');
 
@@ -32,7 +32,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/users', users.list);
+app.get('/users/:id', users.user);
 
 http.createServer( app ).listen( 3000, function() {
   console.log('Express server listening on port 3000');
